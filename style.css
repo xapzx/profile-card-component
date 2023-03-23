@@ -20,4 +20,41 @@ body {
     background: url(images/bg-pattern-top.svg) right 51vw bottom 45vh, url(images/bg-pattern-bottom.svg) left 51vw top 45vh;
     background-color: var(--clr-primary-dark-cyan);
     background-repeat: no-repeat;
+    display: grid;
+    place-content: center;
+    padding: 1.5rem;
+}
+
+main {
+    background-color: white;
+    border-radius: 1rem;
+    overflow: hidden;
+    text-align: center;
+    color: var(--clr-primary-dark-grayish-blue);
+}
+
+.profile-info > p {
+    font-size: 0.9rem;
+}
+
+.profile-name > span {
+    color: var(--clr-primary-dark-desaturated-blue);
+    font-weight: var(--fw-bold);
+}
+
+.profile-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 1.5rem;
+    border-top: 1px solid var(--clr-neutral-dark-gray);
+}
+
+.stat-data {
+    color: var(--clr-primary-dark-desaturated-blue);
+    font-weight: var(--fw-bold);
+}
+
+.stat-type {
+    font-size: 0.6rem;
+    letter-spacing: 2px;
 }
