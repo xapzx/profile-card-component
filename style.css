@@ -41,6 +41,7 @@ main {
 
 .profile-info > p {
     font-size: 0.9rem;
+    padding-top: 0.2rem;
 }
 
 .profile-name > span {
@@ -51,7 +52,7 @@ main {
 .profile-stats {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    padding: 1.5rem 0;
+    padding: 1.5rem;
     border-top: 1px solid var(--clr-neutral-dark-gray);
 }
 
