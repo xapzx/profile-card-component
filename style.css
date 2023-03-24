@@ -17,7 +17,9 @@ body {
     min-height: 100vh;
     font-family: var(--ff-base);
     font-size: var(--fs-base);
-    background: url(images/bg-pattern-top.svg) right 51vw bottom 45vh, url(images/bg-pattern-bottom.svg) left 51vw top 45vh;
+    background: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
+    background-position: right 52vw bottom 35vh, left 48vw top 52vh;
+    /* background: url(images/bg-pattern-top.svg) right 51vw bottom 45vh, url(images/bg-pattern-bottom.svg) left 51vw top 45vh; */
     background-color: var(--clr-primary-dark-cyan);
     background-repeat: no-repeat;
     display: grid;
@@ -73,4 +75,13 @@ main {
     position: absolute;
     left: 35%;
     top: 24%;
+}
+
+.sr-only {
+    position: absolute ;
+    left: -10000px;
+    width: 1px;
+    height: 1px;
+    top: auto;
+    overflow: hidden;
 }
