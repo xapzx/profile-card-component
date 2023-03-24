@@ -31,6 +31,12 @@ main {
     overflow: hidden;
     text-align: center;
     color: var(--clr-primary-dark-grayish-blue);
+    position: relative;
+}
+
+.profile-info {
+    margin-top: 4rem;
+    margin-bottom: 1.5rem;
 }
 
 .profile-info > p {
@@ -45,7 +51,7 @@ main {
 .profile-stats {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    padding: 1.5rem;
+    padding: 1.5rem 0;
     border-top: 1px solid var(--clr-neutral-dark-gray);
 }
 
@@ -57,4 +63,13 @@ main {
 .stat-type {
     font-size: 0.6rem;
     letter-spacing: 2px;
+}
+
+.profile-photo {
+    border: solid white 5px;
+    border-radius: 100%;
+    overflow: hidden;
+    position: absolute;
+    left: 35%;
+    top: 24%;
 }
